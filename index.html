@@ -18,7 +18,7 @@
     position: relative;
     width: 100%;
     max-width: 900px;
-    aspect-ratio: 900 / 1125;
+    aspect-ratio: 900 / 1600;
     background: url("yo-estaré.png") no-repeat center/contain;
   }
   #canvas {
@@ -37,7 +37,7 @@
   input[type="file"] {
     display: inline-block;
     padding: 22px 32px; /* más grande */
-    background: #007cff;
+    background: #141414;
     color: white;
     border: none;
     border-radius: 18px;
@@ -45,7 +45,7 @@
     font-size: 24px; /* más legible */
   }
   input[type="file"]::file-selector-button {
-    background: #0031a7;
+    background: #8ccf01;
     border: none;
     color: white;
     padding: 22px 32px; /* más grande */
@@ -60,7 +60,7 @@
     border-radius: 18px;
     cursor: pointer;
     font-size: 24px; /* más legible */
-    background: #0031a7;
+    background: #8ccf01;
     color: white;
     width: 220px; /* mismo ancho para ambos */
   }
@@ -69,7 +69,7 @@
 <body>
 
 <div class="contenedor">
-  <canvas id="canvas" width="900" height="1125"></canvas>
+  <canvas id="canvas" width="900" height="1600"></canvas>
 </div>
 
 <div class="controles">
@@ -81,7 +81,7 @@
   const canvas = document.getElementById("canvas");
   const ctx = canvas.getContext("2d");
   const plantilla = new Image();
-  plantilla.src = "TLC_2026.png";
+  plantilla.src = "TLC-2026-1.png";
 
   const upload = document.getElementById("upload");
   const download = document.getElementById("download");
@@ -115,9 +115,9 @@
 
     if (foto) {
       // círculo de recorte
-      const cx = 450;  // centro en x
-      const cy = 319;  // centro en y
-      const radio = 220;
+      const cx = 453;  // centro en x
+      const cy = 569;  // centro en y
+      const radio = 347;
 
       ctx.save();
       ctx.beginPath();
